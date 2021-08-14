@@ -12,6 +12,7 @@ import java.util.Scanner;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@ExtendWith(TestResultLogger.class)
 
     public class BaseTest {
 
