@@ -47,14 +47,6 @@ public class VerifyWebImage extends BaseTest {
         List<WebElement> myElements = driver.findElements(newsImageLocator);
         System.out.println("Size of List: "+myElements.size());
 
-        /*
-        for(WebElement e : myElements)
-        {
-            System.out.print("Text within the Anchor tab"+e.getText()+"\t");
-            System.out.println("Anchor: "+e.getAttribute("href"));
-        }
-
-        */
 
     }
 

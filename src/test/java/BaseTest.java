@@ -23,6 +23,7 @@ import java.util.Scanner;
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.get("https://www.yaani.com.tr/");
+        //driver.get("https://tr13.yaani.com.tr/");
         driver.manage().window().maximize();
     }
 
