@@ -12,7 +12,7 @@ public class VerifyWebImage extends BaseTest {
     HomePage homePage;
     SerpPage serpPage;
     NewsPage newsPage;
-    By newsImageLocator = By.className("media-left");
+    By newsImageLocator = new By.ByTagName("img");
 
     @Test
     @Order(1)
@@ -39,11 +39,6 @@ public class VerifyWebImage extends BaseTest {
     @Test
     @Order(3)
     public void get_A_ImageCount(){
-
-      //  Integer CountImage = newsPage.getImageCount();
-      //  Assertions.assertTrue(newsPage.checkIfImageExist(),"Not image on news serp page");
-      //  System.out.println(newsPage.getImageCount());
-
         List<WebElement> myElements = driver.findElements(newsImageLocator);
         System.out.println("Size of List: "+myElements.size());
 

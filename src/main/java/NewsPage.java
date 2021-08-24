@@ -6,8 +6,7 @@ import java.util.List;
 
 public class NewsPage extends BasePage{
 
-    By newsImageLocator = new By.ByClassName("media-left");
-
+    By newsImageLocator = new By.ByTagName("img");
 
     public NewsPage(WebDriver driver) {
         super(driver);
@@ -21,20 +20,10 @@ public class NewsPage extends BasePage{
 
         return getAllProducts().size();
 
-
-
     }
-
-
-
 
     public List<WebElement> getAllProducts(){
 
          return findAll(newsImageLocator);
-      //  System.out.println("Number of elements:" + ((List<?>) elements).size());
-        //return elements;
     }
-
-
-   //public boolean checkIfImageExist() {  return find(newsImageLocator).isDisplayed();    }
 }

@@ -22,8 +22,7 @@ import java.util.Scanner;
     public void setUp(){
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        driver.get("https://www.yaani.com.tr/");
-        //driver.get("https://tr13.yaani.com.tr/");
+        driver.get("https://duckduckgo.com/?");
         driver.manage().window().maximize();
     }
 

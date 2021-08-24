@@ -6,8 +6,8 @@ import java.util.List;
 
 public class BasePage {
 
-    By allTabLocator = By.xpath("//div[@id=\"TÜMÜ\"]");
-    By newsTabLocator = By.xpath("//div[@id=\"HABERLER\"]");
+    By allTabLocator = By.xpath("//*[@id=\"duckbar_static\"]/li[1]/a");
+    By newsTabLocator = By.xpath("//*[@id=\"duckbar_static\"]/li[2]/a");
 
     WebDriver driver ;
 

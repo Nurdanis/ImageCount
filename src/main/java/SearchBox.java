@@ -3,11 +3,8 @@ import org.openqa.selenium.WebDriver;
 
 public class SearchBox extends BasePage{
 
-    //By searchBoxLocator = new By.ByCssSelector("input.desktopOldAutosuggestTheme-input");
-  //  By searchButtonLocator = new By.ByCssSelector("div.SearchBoxOld-buttonContainer");
-
-    By searchBoxLocator = By.id("searchText");
-    By submitButtonLocator = By.id("searchButton");
+    By searchBoxLocator = By.id("search_form_input_homepage");
+    By submitButtonLocator =By.id("search_button_homepage");
 
 
     public SearchBox(WebDriver driver) {
