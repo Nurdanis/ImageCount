@@ -6,3 +6,4 @@ Duckduck website with Image Tab - image count
 - **java**
 - **TestNG**
 - **Maven**
+- **log4j+logfile**
