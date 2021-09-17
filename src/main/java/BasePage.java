@@ -1,10 +1,11 @@
+import driver.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class BasePage {
+public class BasePage extends Driver {
 
     By allTabLocator = By.xpath("//*[@id=\"duckbar_static\"]/li[1]/a");
     By newsTabLocator = By.xpath("//*[@id=\"duckbar_static\"]/li[2]/a");
